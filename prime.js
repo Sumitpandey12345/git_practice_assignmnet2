@@ -1,6 +1,12 @@
 let num= 5
-if(num%2==0){
-    console.log("prime no.")
+let count =0
+for(let i=1;i<=num; i++){
+    if(num%i==0){
+        count++
+    }
+}
+if(count==2){
+    console.log("prime number")
 }else{
-    console.log("Not prime")
+    console.log("not prime")
 }
